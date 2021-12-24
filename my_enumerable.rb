@@ -12,7 +12,7 @@ module MyEnumeralbe
 
   def filter
     results = []
-    each { |item| results << element if yield item }
+    each { |item| results << item if yield item }
     results
   end
 end
