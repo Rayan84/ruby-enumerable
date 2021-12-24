@@ -1,5 +1,8 @@
-require_relative './my_enumerable.rb'
+# frozen_string_literal: true
 
+require_relative './my_enumerable'
+
+# Class MyList
 class MyList
   include MyEnumeralbe
   def initialize(list)
@@ -7,7 +10,7 @@ class MyList
   end
 
   def each
-    x = 0
+    i = 0
     while i < @list.length
       yield @list[i]
       i += 1
@@ -16,7 +19,7 @@ class MyList
   end
 end
 
-list = MyEnumeralbe.new(1, 2, 3, 4)
+list = MyList.new([1, 2, 3, 4])
 
 puts(list.all? { |e| e > 5 })
 puts(list.all? { |e| e > 5 })

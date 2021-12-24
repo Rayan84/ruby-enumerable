@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Module MyEnumerable
 module MyEnumeralbe
   def all?
     each { |item| return false unless yield item }
@@ -14,5 +17,4 @@ module MyEnumeralbe
     each { |item| results << element if yield item }
     results
   end
-
 end
