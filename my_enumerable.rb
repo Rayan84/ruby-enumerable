@@ -4,4 +4,15 @@ module MyEnumeralbe
     true
   end
 
+  def any?
+    each { |item| return true if yield item }
+    false
+  end
+
+  def filter
+    results = []
+    each { |item| results << element if yield item }
+    results
+  end
+
 end
