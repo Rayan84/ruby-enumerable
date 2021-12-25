@@ -2,6 +2,13 @@
 
 > This project is a Ruby based application, it demonstartes refactoring ruby enumerable functions in the most basic manner possible.
 
+## Getting started
+  Run the following commands on the terminal your local machine:
+
+  - `git clone https://github.com/Rayan84/ruby-enumerable.git`
+  - `cd ruby-enumerable`
+  - `ruby` the/path/to/my_list.rb
+
 ## Authors
 
 👤 **Alexander Odufuye**
